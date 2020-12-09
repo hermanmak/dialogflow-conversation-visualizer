@@ -69,7 +69,7 @@ You can change the schema as required in the Dataflow code to include other key:
     ```sh
     python3 -m virtualenv tempenv
     source tempenv/bin/activate
-    pip install apache-beam[gcp]
+    pip install "apache-beam[gcp]"
     ```
 
 7. Create BigQuery dataset
