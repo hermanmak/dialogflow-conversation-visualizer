@@ -1,4 +1,4 @@
-# Dialogflow Log Visualizer
+# Dialogflow Conversation Visualizer
 This repository contains an example of sending Dialogflow conversations to BigQuery using Dataflow and visualizing them using Data Studio.
 
 ## Visualizer
