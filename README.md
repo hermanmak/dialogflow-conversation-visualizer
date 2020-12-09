@@ -1,7 +1,12 @@
-# Dialogflow Log Parser
+# Dialogflow Log Visualizer
+This repository contains an example of sending Dialogflow conversations to BigQuery using Dataflow and visualizing them using Data Studio.
 
-This repository contains an example of how to leverage Cloud Dataflow and BigQuery to view Dialogflow interactions.
+## Visualizer
+You can view Dialogflow complete conversations between End Users and the Agent. The Data Studio dashboard allows the user to search based on time or by session Id.
 
+![Data Studio Dashboard](images/datastudio.png)
+
+## Data Pipeline
 The Pipeline Steps are as follows:
 
 1. Dialogflow Interactions are logged to Google Cloud Logging
@@ -88,9 +93,6 @@ You can change the schema as required in the Dataflow code to include other key:
     https://cloud.google.com/dialogflow/docs/history#access_all_logs
 
 Once you enable Enable Log interactions, your new Dialogflow interactions will be available in BigQuery
-
-## Visualize Using DataStudio
-Using DataStudio as your visualization tool allows your team to build dashboards and monitor Dialogflow conversations.
 
 
 
