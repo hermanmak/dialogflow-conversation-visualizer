@@ -89,4 +89,9 @@ You can change the schema as required in the Dataflow code to include other key:
 
 Once you enable Enable Log interactions, your new Dialogflow interactions will be available in BigQuery
 
+## Visualize Using DataStudio
+Using DataStudio as your visualization tool allows your team to build dashboards and monitor Dialogflow conversations.
+
+
+
 **This is not an officially supported Google product**
