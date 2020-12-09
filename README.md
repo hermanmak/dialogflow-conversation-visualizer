@@ -1,8 +1,8 @@
 # Dialogflow Conversation Visualizer
-This repository contains an example of sending Dialogflow conversations to BigQuery using Dataflow and visualizing them using Data Studio.
+This repository contains an example of sending Dialogflow interactions to BigQuery using Dataflow. Using Data Studio to visualize entire conversations, or groups of dialogflow interactions.
 
-## Visualizer
-You can view Dialogflow complete conversations between End Users and the Agent. The Data Studio dashboard allows the user to search based on time or by session Id.
+## Visualization
+You can view Dialogflow complete conversations between End Users and the Agent. This setup guide will show you how to enable searching via Session Id or Timestamp.
 
 ![Data Studio Dashboard](images/datastudio.png)
 
