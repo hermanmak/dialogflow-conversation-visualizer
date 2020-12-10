@@ -103,8 +103,22 @@ You can change the schema as required in the Dataflow code to include other key:
     Enable Log interactions to Dialogflow and Google Cloud
     https://cloud.google.com/dialogflow/docs/history#access_all_logs
 
-Once you enable Enable Log interactions, your new Dialogflow interactions will be available in BigQuery
-
-
+10. Create a new Data Studio report
+    
+    Under add data choose BigQuery and add your `[YOUR_BIGQUERY_DATASET.YOUR BIGQUERY_TABLE]` to this report.
+    
+11. Setup the main table too see interactions. 
+    Drag at least the `session_id`, `receiveTimestamp`, `resolved_query`, `speech`, and `intent_name`. to the Dimension category. Under Sort category add `session_id` and under Secondary Sort category add `receiveTimestamp`.
+    
+    ![Setup main table](images/datastudio.png)
+    
+12. Setup filtering to drill down into conversations.
+    Drag a `Drop-down list` control into the canvas area. Drag the `session_id` under Control field category.
+    
+    ![Setup filtering](images/datastudio2.png)
+    
+    Drag a `Date range control` control into the canvas area.
+    
+    ![Setup filtering2](images/datastudio3.png)
 
 **This is not an officially supported Google product**
