@@ -69,7 +69,18 @@ You can change the schema as required in the Dataflow code to include other key:
     ```sh
     gcloud logging sinks create [SINK_NAME] pubsub.googleapis.com/projects/[PROJECT_ID]/topics/[TOPIC_NAME] --log-filter="resource.type=global"
     ```
-
+    
+    Enable the Google Cloud Logging Sink to write into the Pub/Sub topic that was created in Step 4.
+    
+    First save the log output containing the service account address. If you did not save it. You can find this in Cloud Logging Router as the `Writer Identity` of the Cloud Logging Sink that you created.
+    ![Setup logging](images/publisher.png)
+    
+    Second check the Pub/Sub topic. On the right hand side menu, find `Permissions` and `Add Member`
+    ![Setup logging2](images/publisher2.png)
+    
+    Finally add the service account, also known as the `Writer Identity`, to this Pub/Sub Topic and give them the `Pub/Sub Publisher` role. Click save.
+    ![Setup logging3](images/publisher3.png)
+    
 6. Install the Apache Beam GCP Library
     ```sh
     python3 -m virtualenv tempenv
