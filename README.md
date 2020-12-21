@@ -81,7 +81,7 @@ You can change the schema as required in the Dataflow code to include other key:
     Finally add the service account, also known as the `Writer Identity`, to this Pub/Sub Topic and give them the `Pub/Sub Publisher` role. Click save.
     ![Setup logging3](images/publisher3.png)
     
-6. Install the Apache Beam GCP Library
+6. In CloudShell, or on your local computer, install the Apache Beam GCP Library by running
     ```sh
     python3 -m virtualenv tempenv
     source tempenv/bin/activate
